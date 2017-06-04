@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Aviron cusomter portal</title>
+
+      <link rel="stylesheet" type="text/css" href="js/vendor/jquery-nice-select-1.1.0/css/nice-select.css" />
+      <link rel="stylesheet" type="text/css" href="js/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+      <!-- CSS INCLUDE -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+      <link rel="stylesheet/less" type="text/css" href="less/app.less" />
+      <!-- EOF CSS INCLUDE -->
+
+   </head>
+   <body>
+
+      <!-- START :: navigation -->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+          <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#aviron-menu" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+             <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Aviron logo">
+             </a>
+          </div>
+          <div class="collapse navbar-collapse" id="aviron-menu">
+
+             <ul class="nav navbar-nav navbar-right ">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">THE EXPERIENCE</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">COMPANY</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                   <i class="icon-cart"></i>
+                     Cart
+                  <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu dropdown-cart" role="menu">
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-only-icon pull-right">
+                                 <i class="icon-remove-1"></i>
+                              </button>
+                          </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-only-icon pull-right">
+                                 <i class="icon-remove-1"></i>
+                              </button>
+                          </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                             <button class="btn btn-only-icon pull-right">
+                                <i class="icon-remove-1"></i>
+                             </button>
+                         </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-only-icon pull-right">
+                                 <i class="icon-remove-1"></i>
+                              </button>
+                          </span>
+                      </span>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="total"> <small>Total : </small> $1570</li>
+                    <li class="footer-dropdown-cart">
+                       <a class="btn btn-primary text-center no-radius" href="#">
+                          View Cart
+                       </a>
+                    </li>
+                </ul>
+              </li>
+
+            <li>
+               <a data-toggle="modal" data-target="#login-register" >
+                  <i class="icon-user-1"></i>
+                  Login/Register
+               </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- END :: navigation -->
+
+      <!-- START :: PC nav -->
+      <div class="pc-nav">
+          <div class="container-fluid">
+            <ul>
+               <li><a href="#">
+                  <i class='icon-history'></i>
+                  <p>history</p>
+               </a></li>
+               <li><a href="#">
+                  <i class='icon-user-1'></i>
+                  <p>profile</p>
+               </a></li>
+               <li  class="active">
+                  <a href="#">
+                  <i class='icon-equipment'></i>
+                  <p>equipment</p>
+               </a></li>
+               <li><a href="#">
+                  <i class='icon-subscription'></i>
+                  <p>Subscriptions</p>
+               </a></li>
+            </ul>
+          </div>
+      </div>
+      <!-- END :: PC nav -->
+
+      <!-- START :: sub-head-tab -->
+      <div class="sub-head-tab">
+         <div class="container-fluid">
+            <ul>
+               <li  class="active">
+                  <a href="#">
+                     <i class="icon-dashboard"></i>
+                      Dashboard
+                   </a>
+               </li>
+               <li>
+                  <a href="#">
+                        <i class="icon-lock-1"></i>
+                     Lock
+                   </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- END :: sub-head-tab -->
+
+      <!-- START  :: equipment-dashboard -->
+      <section class="equipment-dashboard">
+         <div class="container">
+
+               <!-- START :: column left -->
+               <div class="col-md-4">
+
+                  <div class="form-group box-select">
+                     <label>Equipment</label>
+                     <select  class="form-control niceselect light right"  name="">
+                        <option value="">Rowing machine</option>
+                        <option value="">Rowing machine</option>
+                        <option value="">Rowing machine</option>
+                        <option value="">Rowing machine</option>
+                     </select>
+                   </div>
+                   <!-- END :: form-group  box-select -->
+
+                  <div class="machine-list">
+
+                     <div class="form-inline">
+                          <button type="button" class="btn btn-primary">
+                             <i class="icon-folder-open"></i> New group
+                          </button>
+                          <div class="form-group">
+                            <input type="text" class="form-control light border" placeholder="Search">
+                          </div>
+                     </div>
+                     <!-- END :: form inline -->
+
+                     <!-- START Collapse -->
+                     <div class="panel-group light margin-top-30" id="machine" role="tablist" aria-multiselectable="true">
+                       <div class="panel">
+
+                         <div class="panel-heading" role="tab" id="headingOne">
+                           <h4 class="panel-title">
+                             <a >
+                             <div class="checkbox checkbox-primary">
+                                   <input id="checkbox1" type="checkbox" checked>
+                                   <label for="checkbox1">
+                                      <i class="icon-folder-open"></i>
+                                       <span role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  class="text-13 text-bold">Kenedy Gym</span>
+                                   </label>
+                              </div>
+                              <div class="right-item">
+                                 <button class="btn btn-lg btn-flat btn-primary">
+                                    <i class=" icon-trash"></i>
+                                 </button>
+                                  <button class="btn btn-lg btn-flat btn-primary">
+                                     <i class="icon-pencil-1"></i>
+                                  </button>
+                                  <button class="btn btn-dark btn-sm">01</button>
+                              </div>
+                             </a>
+
+                           </h4>
+                         </div>
+                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                           <div class="panel-body">
+                              <ul class="euipment-ul">
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-1" type="checkbox">
+                                          <label for="checkbox1-1">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-2" type="checkbox">
+                                          <label for="checkbox1-2">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-3" type="checkbox">
+                                          <label for="checkbox1-3">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-4" type="checkbox">
+                                          <label for="checkbox1-4">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+
+                              </ul>
+                           </div>
+                         </div>
+                       </div>
+                       <!-- END :: a  panel -->
+
+
+                       <div class="panel">
+                         <div class="panel-heading" role="tab" id="headingTwo">
+                           <h4 class="panel-title">
+                              <a >
+                            <div class="checkbox checkbox-primary">
+                                   <input id="checkbox2" type="checkbox" checked>
+                                   <label for="checkbox2">
+                                      <i class="icon-folder-open"></i>
+                                       <span role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"  class="text-13 text-bold">Obama Gym</span>
+                                   </label>
+                              </div>
+
+                              <div class="right-item">
+                                 <button class="btn btn-lg btn-flat btn-primary">
+                                    <i class=" icon-trash"></i>
+                                 </button>
+                                  <button class="btn btn-lg btn-flat btn-primary">
+                                     <i class="icon-pencil-1"></i>
+                                  </button>
+                                  <button class="btn btn-dark btn-sm">01</button>
+                              </div>
+                            </a>
+                           </h4>
+                         </div>
+                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                           <div class="panel-body">
+                              <ul  class="euipment-ul">
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-1" type="checkbox">
+                                          <label for="checkbox1-1">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-2" type="checkbox">
+                                          <label for="checkbox1-2">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-3" type="checkbox">
+                                          <label for="checkbox1-3">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-4" type="checkbox">
+                                          <label for="checkbox1-4">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+
+                              </ul>
+                           </div>
+                         </div>
+                       </div>
+
+                        <!-- END :: a  panel -->
+
+                       <div class="panel">
+                         <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                              <a >
+                              <div class="checkbox checkbox-primary">
+                                    <input id="checkbox3" type="checkbox">
+                                    <label for="checkbox3">
+                                       <i class="icon-folder-open"></i>
+                                        <span role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"  class="text-13 text-bold">Sunny Gym</span>
+                                    </label>
+                               </div>
+                               <div class="right-item">
+                                  <button class="btn btn-lg btn-flat btn-primary">
+                                     <i class=" icon-trash"></i>
+                                  </button>
+                                   <button class="btn btn-lg btn-flat btn-primary">
+                                      <i class="icon-pencil-1"></i>
+                                   </button>
+                                   <button class="btn btn-dark btn-sm">01</button>
+                               </div>
+                              </a>
+                           </h4>
+                         </div>
+                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+                              <ul class="euipment-ul">
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-1" type="checkbox">
+                                          <label for="checkbox1-1">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-2" type="checkbox">
+                                          <label for="checkbox1-2">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-3" type="checkbox">
+                                          <label for="checkbox1-3">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+
+                                 <li>
+                                    <div class="checkbox checkbox-primary">
+                                          <input id="checkbox1-4" type="checkbox">
+                                          <label for="checkbox1-4">
+                                             <div class="machine-name">
+                                                <strong>Bao aviron</strong>
+                                                <p>Machine ID : ABC123456ABC</p>
+                                             </div>
+                                          </label>
+                                     </div>
+                                 </li>
+
+                              </ul>
+                           </div>
+                         </div>
+                       </div>
+                        <!-- END :: a  panel -->
+
+                     </div>
+                     <!-- END :: Collapse -->
+
+                  </div>
+
+               </div>
+               <!-- END :: column left -->
+
+               <div class="col-md-8">
+
+                  <div class="date-range form-inline">
+
+                     <div class="form-group">
+                      <label for="" class="control-label">
+                        Date range
+                     </label>
+                     </div>
+
+                     <div class="form-group">
+                       <div class="form-control-wrapper has-date">
+                          <input type="text"  class="form-control floating-label date  input-md" placeholder="From date">
+                       </div>
+                     </div>
+
+                     <div class="form-group center">
+                        <label for="" class="control-label">
+                          -
+                       </label>
+                    </div>
+
+                     <div class="form-group">
+                        <div class="form-control-wrapper has-date">
+            					<input type="text"  class="form-control floating-label date  input-md" placeholder="To date">
+            				</div>
+                     </div>
+
+                     <div class="form-group">
+                        <button class="btn btn-primary btn-square"> <i class=" icon-search"></i> </button>
+                     </div>
+
+                     <!-- END :: a form-group -->
+                  </div>
+                  <!-- END :: Date range -->
+
+                  <div class="data-metric">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <h5>Challenger</h5>
+                           <h1>30</h1>
+                        </div>
+                        <div class="col-md-4">
+                           <h5>Output ( KJ)</h5>
+                           <h1>37</h1>
+                        </div>
+                        <div class="col-md-4">
+                           <h5>Calories</h5>
+                           <h1>1500</h1>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4">
+                           <h5>Time (Hour::min)</h5>
+                           <h1>0000:00</h1>
+                        </div>
+                        <div class="col-md-4">
+                           <h5>Meters</h5>
+                           <h1>1523</h1>
+                        </div>
+                        <div class="col-md-4">
+                           <h5>Stroke</h5>
+                           <h1>98</h1>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- END :: data-metric -->
+
+
+                  <div class="data-filter  margin-top-10">
+                     <div class="row">
+                        <div class="col-md-2 form-group">
+                           <select  class="form-control niceselect light"  name="">
+                              <option value="1" >Hourly</option>
+                              <option value="1" >Daily</option>
+                              <option value="2" selected>Weekly</option>
+                           </select>
+                        </div>
+                        <div class="col-md-10 text-right">
+                           <ul>
+                              <li>Challenges</li>
+                              <li>Time</li>
+                              <li>Output</li>
+                              <li>Meters</li>
+                              <li class="active">Calories</li>
+                              <li>Stokes</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- END :: data-filter -->
+
+                  <div class="the-graph">
+                      <div id="chart_div" class="chart"></div>
+                  </div>
+                  <!-- END :: the-graph -->
+
+               </div>
+               <!-- END :: column Right -->
+
+         </div>
+      </section>
+      <!-- END  :: equipment-dashboard -->
+
+      <!-- START :: Footer -->
+      <footer>
+         <div class="container">
+            <div class="top col-md-12">
+               <img class="logo" src="img/Logo-2.png" alt="Aviron logo">
+
+               <ul class="social">
+                  <li><a href="#">
+                     <i class=" icon-twitter"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-gplus"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-instagram"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-linkedin"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-facebook"></i>
+                  </a></li>
+
+               </ul>
+
+            </div>
+            <div class="end col-md-12">
+               2017 © Power by Aviron Interactive Inc.
+            </div>
+         </div>
+      </footer>
+      <!-- END :: Footer -->
+
+
+      <!-- START :: modal login -->
+      <div id="login-register"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Aviron Login">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+
+            <div class="panel-heading">
+               <div class="logo-aviron z-index-1">
+                  <div class="logo-circle">
+                     <img src="img/logo-3.png" alt="logo aviron">
+                  </div>
+               </div>
+               <div class="heading-icon z-index-2">
+                     <i data-dismiss="modal" aria-label="Close"  class='icon-close'></i>
+               </div>
+            </div>
+
+            <div class="panel-body">
+               <div class="row">
+                  <div class="login-box  col-xs-12 col-md-6">
+                     <h2 class="text-uppercase text-center-xs-sm">Log in</h2>
+                     <form>
+                        <div class="form-group">
+                          <label for="Email-address">Email address</label>
+                          <input type="email" class="form-control light input-md" id="Email-address" placeholder="">
+                        </div>
+                        <div class="form-group margin-top-20">
+                          <label for="Password">Password </label>
+                          <input type="password" class="form-control light input-md" id="Password" placeholder="">
+                        </div>
+
+                        <div class="checkbox checkbox-primary">
+                           <input id="checkbox3" type="checkbox">
+                           <label for="checkbox3">
+                               Remeber password
+                           </label>
+                       </div>
+
+                       <button type="submit" class="btn btn-primary btn-md margin-top-20 width-49-percent-xs">Login</button>
+                       <button type="button" switch-view-login-register="register-box"
+                       class="btn btn-primary btn-md margin-top-20 width-49-percent-xs btn-flat">
+                          Register
+                       </button>
+
+
+                       <p class="margin-top-xs-40 margin-bottom-xs-40 margin-top-110 margin-bottom-80 text-center-xs-sm">
+                          <a class="text-primary text-bolder"  href="#">
+                             Are you forgot password ?
+                          </a>
+                       </p>
+
+                     </form>
+                  </div>
+                  <!-- END :: Login -->
+
+
+                  <div class="register-box col-xs-12 col-md-6 margin-bottom-40">
+                     <h2 class="text-uppercase text-center-xs-sm">Sign up</h2>
+                     <form>
+                        <div class="form-group">
+                          <label for="Email-address">Email address</label>
+                          <input type="email" class="form-control  input-md" id="Email-address" placeholder="">
+                        </div>
+                        <div class="form-group margin-top-20">
+                          <label for="Password">Password </label>
+                          <input type="password" class="form-control  input-md" id="Password" placeholder="">
+                        </div>
+
+                        <div class="form-group margin-top-20">
+                          <label for="Confirm-password">Confirm password </label>
+                          <input type="password" class="form-control  input-md" id="Confirm-password" placeholder=" ">
+                        </div>
+
+
+                       <button type="submit" class="btn btn-primary btn-md margin-top-20 width-49-percent-xs">Sign up</button>
+                       <button type="button" switch-view-login-register="login-box"
+                       class="btn btn-primary btn-md margin-top-20 width-49-percent-xs btn-flat">
+                         Log in
+                       </button>
+
+
+                     </form>
+                  </div>
+                  <!-- END ::Register -->
+               </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- END :: modal login -->
+
+
+      <!-- START :: Edit Equipment -->
+      <div class="modal fade" id="edit-equipment" tabindex="-1" role="dialog" aria-labelledby="Edit Equipment">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+              <h5 class="modal-title  " id="myModalLabel">Edit equipment</h5>
+            </div>
+            <div class="modal-body">
+
+               <table class="table hide-border">
+                  <tr>
+                     <td>Machine ID</td>
+                     <td> ABC123456ABC</td>
+                     <td class="text-right" rowspan="3"> <img src="img/Logo-3.png" alt=""> </td>
+                  </tr>
+                  <tr>
+                     <td>Model</td>
+                     <td>W10</td>
+                  </tr>
+                  <tr>
+                     <td>Lock</td>
+                     <td>
+                        <div class="onoffswitch2">
+                            <input type="checkbox" name="onoffswitch2" class="onoffswitch2-checkbox" id="myonoffswitch2" checked>
+                            <label class="onoffswitch2-label" for="myonoffswitch2">
+                                <span class="onoffswitch2-inner"></span>
+                                <span class="onoffswitch2-switch"></span>
+                            </label>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+
+               <div class="form-group">
+                <label for="Product-name">Product name</label>
+                <input type="text" class="form-control input-md" id="Product-name" placeholder="Product name">
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-md " data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary btn-md ">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- START :: Edit Equipment -->
+
+
+
+      <!-- APP SCRIPTS -->
+      <script src="js/vendor/jquery/jquery-1.9.1.js"></script>
+      <script src="js/vendor/table/jquery.dataTables.min.js"></script>
+      <script src="js/vendor/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+      <script src="js/vendor/zelect/zelect.js"></script>
+      <script src="js/vendor/bootstrap-material-datetimepicker/js/moment-with-locales.min.js"></script>
+      <script src="js/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+      <script src="js/vendor/sortable/jquery.sortable.js"></script>
+
+      <!-- START :: CHart -->
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script src="js/vendor/nvd3/chart.data.equipment.js"></script>
+      <!-- END :: CHart -->
+
+
+      <script src="js/bootstrap.min.js"></script>
+      <script src="less/less.min.js"></script>
+      <script src="js/pc/libs.js"></script>
+      <script src="js/pc/pages.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+            $('.euipment-ul').sortable({
+   				connectWith: '.euipment-ul',
+   			});
+         } );
+      </script>
+      <!-- END APP SCRIPTS -->
+   </body>
+</html>

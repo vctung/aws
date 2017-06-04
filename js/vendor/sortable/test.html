@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      
+       
+       	<section id="connected">
+		<h2>Connected Sortable Lists</h2>
+            
+        <div class="sortable">
+            <div>
+                <a> <span>::</span> sdsdsd 1</a>
+                <ul class="connected">           
+                    <li> Item 1</li>
+                    <li> Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                    <li>Item 6</li>
+                </ul>
+            </div>
+            
+            <div>
+                <a> <span>::</span> sdsdsd 2</a>
+                <ul class="connected">            
+                    <li class="highlight">Item 1</li>
+                    <li class="highlight">Item 2</li>
+                    <li class="highlight">Item 3</li>
+                    <li class="highlight">Item 4</li>
+                    <li class="highlight">Item 5</li>
+                    <li class="highlight">Item 6</li>
+                </ul>
+            </div>
+            
+             
+            <div>
+                <a> <span>::</span> sdsdsd 3</a>
+                <ul class="connected">            
+                    <li class="highlight">Item 1</li>
+                    <li class="highlight">Item 2</li>
+                    <li class="highlight">Item 3</li>
+                    <li class="highlight">Item 4</li>
+                    <li class="highlight">Item 5</li>
+                    <li class="highlight">Item 6</li>
+                </ul>
+            </div>
+            
+        </div>
+		
+		
+            
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="jquery.sortable.js"></script>
+            
+            <script>
+		$(function() {
+		    $('.sortable').sortable( {
+                handle: 'span'
+            });    
+			$('.connected').sortable({
+				connectWith: '.connected',                 
+			});
+			
+		});
+	</script>
+            
+            
+	</section>
+       
+       
+   </body>
+</html>

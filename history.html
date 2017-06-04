@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Aviron cusomter portal</title>
+
+      <link rel="stylesheet" type="text/css" href="js/vendor/jquery-nice-select-1.1.0/css/nice-select.css" />
+
+      <!-- Owl Stylesheets -->
+       <link rel="stylesheet" href="js/vendor/OwlCarousel/owlcarousel/assets/owl.carousel.min.css">
+       <link rel="stylesheet" href="js/vendor/OwlCarousel/owlcarousel/assets/owl.theme.default.min.css">
+
+      <!-- CSS INCLUDE -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+      <link rel="stylesheet/less" type="text/css" href="less/app.less" />
+      <!-- EOF CSS INCLUDE -->
+
+   </head>
+   <body>
+
+      <!-- START :: navigation -->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+          <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#aviron-menu" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+             <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Aviron logo">
+             </a>
+          </div>
+          <div class="collapse navbar-collapse" id="aviron-menu">
+
+             <ul class="nav navbar-nav navbar-right ">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">THE EXPERIENCE</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">COMPANY</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                   <i class="icon-cart"></i>
+                     Cart
+                  <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu dropdown-cart" role="menu">
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-only-icon pull-right">
+                                 <i class="icon-remove-1"></i>
+                              </button>
+                          </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-only-icon pull-right">
+                                 <i class="icon-remove-1"></i>
+                              </button>
+                          </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                             <button class="btn btn-only-icon pull-right">
+                                <i class="icon-remove-1"></i>
+                             </button>
+                         </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-only-icon pull-right">
+                                 <i class="icon-remove-1"></i>
+                              </button>
+                          </span>
+                      </span>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="total"> <small>Total : </small> $1570</li>
+                    <li class="footer-dropdown-cart">
+                       <a class="btn btn-primary text-center no-radius" href="#">
+                          View Cart
+                       </a>
+                    </li>
+                </ul>
+              </li>
+
+            <li>
+               <a data-toggle="modal" data-target="#login-register" >
+                  <i class="icon-user-1"></i>
+                  Login/Register
+               </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- END :: navigation -->
+
+      <!-- START :: PC nav -->
+      <div class="pc-nav">
+          <div class="container-fluid">
+            <ul>
+               <li  class="active">
+                     <a href="#">
+                     <i class='icon-history'></i>
+                     <p>history</p>
+                  </a>
+               </li>
+               <li>
+                     <a href="#">
+                     <i class='icon-user-1'></i>
+                     <p>profile</p>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class='icon-equipment'></i>
+                  <p>equipment</p>
+               </a></li>
+               <li><a href="#">
+                  <i class='icon-subscription'></i>
+                  <p>Subscriptions</p>
+               </a></li>
+            </ul>
+          </div>
+      </div>
+      <!-- END :: PC nav -->
+
+      <section class="user-achievements">
+         <div class="container">
+             <div class="row">
+               <div class="col-md-4">
+                 <div class="user-information-box">
+                   <img src="img/avatar.jpg" alt="">
+                   <h4>Sunny</h4>
+                   <div class="btn-level">
+                     <button type="button" class="btn btn-primary btn-lg">
+                        <img src="img/level.png" alt="Sunny level">
+                       Profesional
+                     </button>
+                   </div>
+                 </div>
+                 <!-- END ::  user-information-box-->
+               </div>
+
+               <div class="col-md-8">
+                   <div class="achievements-list">
+                      <h4> <i class="icon-medal"></i> achievements</h4>
+                      <p>You’ve successfully earned <strong>3</strong></p>
+
+                      <!-- START :: SLideshow -->
+                      <div  id="achievement-slide" class="carousel slide" data-ride="carousel" data-interval="false">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#achievement-slide" data-slide-to="0" class="active"></li>
+                            <li data-target="#achievement-slide" data-slide-to="1"></li>
+                            <li data-target="#achievement-slide" data-slide-to="2"></li>
+                          </ol>
+
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+
+                              <div class="achievements-page">
+
+                                <div class="achievements-item type-1 active"></div>
+                                <div class="achievements-item type-2 active"></div>
+                                <div class="achievements-item type-3 active"></div>
+                                <div class="achievements-item type-1"></div>
+                                <div class="achievements-item type-2"></div>
+                                <div class="achievements-item type-3"></div>
+                                <div class="achievements-item type-3"></div>
+
+                                <div class="achievements-item type-1"></div>
+                                <div class="achievements-item type-2"></div>
+                                <div class="achievements-item type-3"></div>
+                                <div class="achievements-item type-1"></div>
+                                <div class="achievements-item type-2"></div>
+                                <div class="achievements-item type-3"></div>
+                                <div class="achievements-item type-3"></div>
+
+                              </div>
+
+                            </div>
+                            <!-- END :: an item -->
+
+                            <div class="item">
+                              <div class="achievements-page">
+
+                                <div class="achievements-item type-1"></div>
+                                <div class="achievements-item type-2"></div>
+                                <div class="achievements-item type-3"></div>
+                                <div class="achievements-item type-1"></div>
+                                <div class="achievements-item type-2"></div>
+                                <div class="achievements-item type-3"></div>
+                                <div class="achievements-item type-3"></div>
+
+                                <div class="achievements-item type-1"></div>
+                                <div class="achievements-item type-2"></div>
+                                <div class="achievements-item type-3"></div>
+                                <div class="achievements-item type-1"></div>
+                                <div class="achievements-item type-2"></div>
+                                <div class="achievements-item type-3"></div>
+                                <div class="achievements-item type-3"></div>
+
+                              </div>
+
+                            </div>
+                            <!-- END :: an item -->
+
+                            <div class="item">
+                              <div class="achievements-page">
+
+                                <div class="achievements-item type-1"></div>
+                                <div class="achievements-item type-2"></div>
+                                <div class="achievements-item type-3"></div>
+                                <div class="achievements-item type-1"></div>
+                                <div class="achievements-item type-2"></div>
+                                <div class="achievements-item type-3"></div>
+                                <div class="achievements-item type-3"></div>
+
+                                <div class="achievements-item type-1"></div>
+                                <div class="achievements-item type-2"></div>
+                                <div class="achievements-item type-3"></div>
+                                <div class="achievements-item type-1"></div>
+                                <div class="achievements-item type-2"></div>
+                                <div class="achievements-item type-3"></div>
+                                <div class="achievements-item type-3"></div>
+
+                              </div>
+
+                            </div>
+                            <!-- END :: an item -->
+
+
+                          </div>
+
+                        </div>
+                      <!-- END :: Slide show -->
+                   </div>
+               </div>
+             </div>
+         </div>
+      </section>
+      <!-- END :: user-achievements -->
+
+
+
+      <section class="history-metric">
+
+         <div class="head">
+            <div class="container">
+               <div class="col-md-4">
+
+                  <div class="form-inline">
+                     <div class="form-group box-select">
+                        <label>Equipment</label>
+                        <select  class="form-control niceselect right"  name="">
+                           <option value="">Rowing machine</option>
+                           <option value="">Rowing machine</option>
+                           <option value="">Rowing machine</option>
+                           <option value="">Rowing machine</option>
+                        </select>
+                      </div>
+                      <!-- END :: form-group  box-select -->
+                  </div>
+
+               </div>
+               <div class="col-md-8 text-right">
+                  <ul class="tab-line">
+                     <li>All time</li>
+                     <li class="active">Last 24 hours</li>
+                     <li>Last 7 days</li>
+                     <li>Last 30 days</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- END ::head  history-metric -->
+
+         <div class="container">
+            <div class="data-metric">
+               <div class="row">
+                  <div class=" col-md-offset-1 col-md-2">
+                     <h5>Challenger</h5>
+                     <h1>30</h1>
+                  </div>
+                  <div class="col-md-2">
+                     <h5>Output ( KJ)</h5>
+                     <h1>37</h1>
+                  </div>
+                  <div class="col-md-2">
+                     <h5>Calories</h5>
+                     <h1>1500</h1>
+                  </div>
+                  <div class="col-md-2">
+                     <h5>Meters</h5>
+                     <h1>1554</h1>
+                  </div>
+                  <div class="col-md-2">
+                     <h5>Strokes</h5>
+                     <h1>50</h1>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="  col-md-offset-1 col-md-2">
+                     <h5>Time (Hour::min)</h5>
+                     <h1>0000:00</h1>
+                  </div>
+                  <div class="col-md-2">
+                     <h5>AVG.Watts</h5>
+                     <h1>50</h1>
+                  </div>
+                  <div class="col-md-2">
+                     <h5>AVG.Cals/hours</h5>
+                     <h1>98</h1>
+                  </div>
+                  <div class="col-md-2">
+                     <h5>AVG.Min/500m</h5>
+                     <h1>100</h1>
+                  </div>
+                  <div class="col-md-2">
+                     <h5>AVG.SPM</h5>
+                     <h1>65</h1>
+                  </div>
+               </div>
+            </div>
+            <!-- END :: data-metric -->
+         </div>
+      </section>
+      <!-- END :: history-metric -->
+
+      <!-- START :: history-games -->
+      <section class="history-games">
+         <div class="container-fluid">
+           <div class="section-head">
+              <h3>
+                <i class="icon-history-1"></i>
+                CHALLENGE HISTORY
+             </h3>
+           </div>
+           <div class="owl-carousel">
+
+               <div class="item history-item active">
+                 <div class="head">
+                    <h4>Head to head</h4>
+                    <div class="date">
+                      <div>AUG</div>
+                      <div>8</div>
+                    </div>
+                    <div class="position">
+                        1<sup>st</sup>
+                    </div>
+                 </div>
+
+                 <div class="content">
+                   <div>
+                     <h4>123</h4>
+                     <p>calories</p>
+                   </div>
+                   <div >
+                     <h4>123</h4>
+                     <p>metric</p>
+                   </div>
+                   <div>
+                     <h4>123</h4>
+                     <p>minutes</p>
+                   </div>
+                 </div>
+
+               </div>
+               <!-- END :: a history-item -->
+               <div class="item history-item">
+                 <div class="head">
+                    <h4>Warm up</h4>
+                    <div class="date">
+                      <div>AUG</div>
+                      <div>8</div>
+                    </div>
+                    <div class="position">
+                        1<sup>st</sup>
+                    </div>
+                 </div>
+
+                 <div class="content">
+                   <div>
+                     <h4>123</h4>
+                     <p>calories</p>
+                   </div>
+                   <div >
+                     <h4>123</h4>
+                     <p>metric</p>
+                   </div>
+                   <div>
+                     <h4>123</h4>
+                     <p>minutes</p>
+                   </div>
+                 </div>
+
+               </div>
+               <!-- END :: a history-item -->
+               <div class="item history-item ">
+                 <div class="head">
+                    <h4>Grand fix</h4>
+                    <div class="date">
+                      <div>AUG</div>
+                      <div>8</div>
+                    </div>
+                    <div class="position">
+                        1<sup>st</sup>
+                    </div>
+                 </div>
+
+                 <div class="content">
+                   <div>
+                     <h4>123</h4>
+                     <p>calories</p>
+                   </div>
+                   <div >
+                     <h4>123</h4>
+                     <p>metric</p>
+                   </div>
+                   <div>
+                     <h4>123</h4>
+                     <p>minutes</p>
+                   </div>
+                 </div>
+
+               </div>
+               <!-- END :: a history-item -->
+               <div class="item history-item ">
+                 <div class="head">
+                    <h4>Zoombie attacked</h4>
+                    <div class="date">
+                      <div>AUG</div>
+                      <div>8</div>
+                    </div>
+                    <div class="position">
+                        1<sup>st</sup>
+                    </div>
+                 </div>
+
+                 <div class="content">
+                   <div>
+                     <h4>123</h4>
+                     <p>calories</p>
+                   </div>
+                   <div >
+                     <h4>123</h4>
+                     <p>metric</p>
+                   </div>
+                   <div>
+                     <h4>123</h4>
+                     <p>minutes</p>
+                   </div>
+                 </div>
+
+               </div>
+               <!-- END :: a history-item -->
+               <div class="item history-item ">
+                 <div class="head">
+                    <h4>Lightning lap</h4>
+                    <div class="date">
+                      <div>AUG</div>
+                      <div>8</div>
+                    </div>
+                    <div class="position">
+                        1<sup>st</sup>
+                    </div>
+                 </div>
+
+                 <div class="content">
+                   <div>
+                     <h4>123</h4>
+                     <p>calories</p>
+                   </div>
+                   <div >
+                     <h4>123</h4>
+                     <p>metric</p>
+                   </div>
+                   <div>
+                     <h4>123</h4>
+                     <p>minutes</p>
+                   </div>
+                 </div>
+
+               </div>
+               <!-- END :: a history-item -->
+               <div class="item history-item ">
+                 <div class="head">
+                    <h4>Zoombie team</h4>
+                    <div class="date">
+                      <div>AUG</div>
+                      <div>8</div>
+                    </div>
+                    <div class="position">
+                        1<sup>st</sup>
+                    </div>
+                 </div>
+
+                 <div class="content">
+                   <div>
+                     <h4>123</h4>
+                     <p>calories</p>
+                   </div>
+                   <div >
+                     <h4>123</h4>
+                     <p>metric</p>
+                   </div>
+                   <div>
+                     <h4>123</h4>
+                     <p>minutes</p>
+                   </div>
+                 </div>
+
+               </div>
+               <!-- END :: a history-item -->
+
+
+         </div>
+         <!-- END :: owl-carousel -->
+
+         </div>
+      </section>
+      <!-- END :: history-games -->
+
+
+      <!-- START :: Section graph -->
+      <section  class="history-graph">
+         <div class="graph-head">
+            <div class="container">
+               <div class="col-md-4">
+                  <h2>Head to head</h2>
+                  <p>Solo competition</p>
+               </div>
+               <div class="col-md-8">
+                  <ul class="tab-circle">
+                     <li class="active">Output (KJ)</li>
+                     <li>Watts</li>
+                     <li>Calories</li>
+                     <li>Cals/hour</li>
+                     <li>metter</li>
+                     <li>Min/500m</li>
+                     <li>SPM</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- END :: Graph head -->
+
+         <div class="the-graph">
+            <div class="container">
+              <div id="chart_div" class="chart"></div>
+            </div>
+         </div>
+         <!-- END :: the-graph -->
+      </section>
+      <!-- END :: Section graph -->
+
+
+
+      <!-- START :: Footer -->
+      <footer>
+         <div class="container">
+            <div class="top col-md-12">
+               <img class="logo" src="img/Logo-2.png" alt="Aviron logo">
+
+               <ul class="social">
+                  <li><a href="#">
+                     <i class=" icon-twitter"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-gplus"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-instagram"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-linkedin"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-facebook"></i>
+                  </a></li>
+
+               </ul>
+
+            </div>
+            <div class="end col-md-12">
+               2017 © Power by Aviron Interactive Inc.
+            </div>
+         </div>
+      </footer>
+      <!-- END :: Footer -->
+
+
+      <!-- START :: modal login -->
+      <div id="login-register"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Aviron Login">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+
+            <div class="panel-heading">
+               <div class="logo-aviron z-index-1">
+                  <div class="logo-circle">
+                     <img src="img/logo-3.png" alt="logo aviron">
+                  </div>
+               </div>
+               <div class="heading-icon z-index-2">
+                     <i data-dismiss="modal" aria-label="Close"  class='icon-close'></i>
+               </div>
+            </div>
+
+            <div class="panel-body">
+               <div class="row">
+                  <div class="login-box  col-xs-12 col-md-6">
+                     <h2 class="text-uppercase text-center-xs-sm">Log in</h2>
+                     <form>
+                        <div class="form-group">
+                          <label for="Email-address">Email address</label>
+                          <input type="email" class="form-control light input-md" id="Email-address" placeholder="">
+                        </div>
+                        <div class="form-group margin-top-20">
+                          <label for="Password">Password </label>
+                          <input type="password" class="form-control light input-md" id="Password" placeholder="">
+                        </div>
+
+                        <div class="checkbox checkbox-primary">
+                           <input id="checkbox3" type="checkbox">
+                           <label for="checkbox3">
+                               Remeber password
+                           </label>
+                       </div>
+
+                       <button type="submit" class="btn btn-primary btn-md margin-top-20 width-49-percent-xs">Login</button>
+                       <button type="button" switch-view-login-register="register-box"
+                       class="btn btn-primary btn-md margin-top-20 width-49-percent-xs btn-flat">
+                          Register
+                       </button>
+
+
+                       <p class="margin-top-xs-40 margin-bottom-xs-40 margin-top-110 margin-bottom-80 text-center-xs-sm">
+                          <a class="text-primary text-bolder"  href="#">
+                             Are you forgot password ?
+                          </a>
+                       </p>
+
+                     </form>
+                  </div>
+                  <!-- END :: Login -->
+
+
+                  <div class="register-box col-xs-12 col-md-6 margin-bottom-40">
+                     <h2 class="text-uppercase text-center-xs-sm">Sign up</h2>
+                     <form>
+                        <div class="form-group">
+                          <label for="Email-address">Email address</label>
+                          <input type="email" class="form-control  input-md" id="Email-address" placeholder="">
+                        </div>
+                        <div class="form-group margin-top-20">
+                          <label for="Password">Password </label>
+                          <input type="password" class="form-control  input-md" id="Password" placeholder="">
+                        </div>
+
+                        <div class="form-group margin-top-20">
+                          <label for="Confirm-password">Confirm password </label>
+                          <input type="password" class="form-control  input-md" id="Confirm-password" placeholder=" ">
+                        </div>
+
+
+                       <button type="submit" class="btn btn-primary btn-md margin-top-20 width-49-percent-xs">Sign up</button>
+                       <button type="button" switch-view-login-register="login-box"
+                       class="btn btn-primary btn-md margin-top-20 width-49-percent-xs btn-flat">
+                         Log in
+                       </button>
+
+
+                     </form>
+                  </div>
+                  <!-- END ::Register -->
+               </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- END :: modal login -->
+
+
+
+
+      <!-- APP SCRIPTS -->
+      <script src="js/vendor/jquery/jquery-1.9.1.js"></script>
+      <script src="js/vendor/table/jquery.dataTables.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+
+      <script src="js/vendor/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+      <script src="js/vendor/zelect/zelect.js"></script>
+      <script src="js/vendor/bootstrap-material-datetimepicker/js/moment-with-locales.min.js"></script>
+      <script src="js/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+      <script src="js/vendor/OwlCarousel/owlcarousel/owl.carousel.js"></script>
+      <script>
+       var owl = $('.owl-carousel');
+       owl.owlCarousel({
+         margin: 20,
+         loop: true,
+         center : true,
+         responsive: {
+           0: {
+             items: 1
+           },
+           600: {
+             items: 2
+           },
+           1000: {
+             items: 4
+           }
+         }
+       })
+     </script>
+
+
+      <script src="less/less.min.js"></script>
+      <script src="js/pc/libs.js"></script>
+      <script src="js/pc/pages.js"></script>
+      <!-- END APP SCRIPTS -->
+
+
+      <!-- START :: CHart -->
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script src="js/vendor/nvd3/chart.data.equipment.js"></script>
+      <!-- END :: CHart -->
+
+      <!-- <script src="http://localhost:35729/livereload.js"></script> -->
+
+
+   </body>
+</html>

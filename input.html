@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Aviron cusomter portal</title>
+
+
+      <!-- CSS INCLUDE -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="js/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet/less" type="text/css" href="less/app.less" />
+      <!-- EOF CSS INCLUDE -->
+
+   </head>
+   <body>
+
+      <!-- START :: navigation -->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+          <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#aviron-menu" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+             <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Aviron logo">
+             </a>
+          </div>
+          <div class="collapse navbar-collapse" id="aviron-menu">
+
+             <ul class="nav navbar-nav navbar-right ">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">THE EXPERIENCE</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">COMPANY</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                   <i class="icon-cart"></i>
+                     Cart
+                  <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu dropdown-cart" role="menu">
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-only-icon pull-right">
+                                 <i class="icon-remove-1"></i>
+                              </button>
+                          </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-only-icon pull-right">
+                                 <i class="icon-remove-1"></i>
+                              </button>
+                          </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                             <button class="btn btn-only-icon pull-right">
+                                <i class="icon-remove-1"></i>
+                             </button>
+                         </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="http://lorempixel.com/50/50/" alt="" />
+                              <span class="item-info">
+                                  <span>Item name</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-only-icon pull-right">
+                                 <i class="icon-remove-1"></i>
+                              </button>
+                          </span>
+                      </span>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="total"> <small>Total : </small> $1570</li>
+                    <li class="footer-dropdown-cart">
+                       <a class="btn btn-primary text-center no-radius" href="#">
+                          View Cart
+                       </a>
+                    </li>
+                </ul>
+              </li>
+
+            <li>
+               <a data-toggle="modal" data-target="#login-register" >
+                  <i class="icon-user-1"></i>
+                  Login/Register
+               </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- END :: navigation -->
+
+      <!-- START :: PC nav -->
+      <div class="pc-nav">
+          <div class="container-fluid">
+            <ul>
+               <li><a href="#">
+                  <i class='icon-history'></i>
+                  <p>history</p>
+               </a></li>
+               <li class="active"><a href="#">
+                  <i class='icon-user-1'></i>
+                  <p>profile</p>
+               </a></li>
+               <li><a href="#">
+                  <i class='icon-equipment'></i>
+                  <p>equipment</p>
+               </a></li>
+               <li><a href="#">
+                  <i class='icon-subscription'></i>
+                  <p>Subscriptions</p>
+               </a></li>
+            </ul>
+          </div>
+      </div>
+      <!-- END :: PC nav -->
+
+
+
+      <div class="container">
+
+            	<div class="row">
+                    <div class="radio radio-primary">
+                        <input type="radio" name="radio1" id="radio1" value="option1">
+                        <label for="radio1">
+                            Small
+                        </label>
+                    </div>
+                    <div class="radio radio-primary">
+                        <input type="radio" name="radio1" id="radio2" value="option2">
+                        <label for="radio2">
+                            Small
+                        </label>
+                    </div>
+
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        Default
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-primary">
+                                    <input id="checkbox2" type="checkbox" checked>
+                                    <label for="checkbox2">
+                                        Primary
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-success">
+                                    <input id="checkbox3" type="checkbox">
+                                    <label for="checkbox3">
+                                        Success
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-info">
+                                    <input id="checkbox4" type="checkbox">
+                                    <label for="checkbox4">
+                                        Info
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-warning">
+                                    <input id="checkbox5" type="checkbox" checked>
+                                    <label for="checkbox5">
+                                        Warning
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-danger">
+                                    <input id="checkbox6" type="checkbox" checked>
+                                    <label for="checkbox6">
+                                        Check me out
+                                    </label>
+                                </div>
+
+
+            	</div>
+
+      </div>
+
+
+      <!-- START :: swticher button -->
+      <div class="container">
+         <div class="onoffswitch2">
+             <input type="checkbox" name="onoffswitch2" class="onoffswitch2-checkbox" id="myonoffswitch2" checked>
+             <label class="onoffswitch2-label" for="myonoffswitch2">
+                 <span class="onoffswitch2-inner"></span>
+                 <span class="onoffswitch2-switch"></span>
+             </label>
+         </div>
+      </div>
+      <!-- END :: swticher button -->
+
+
+      <!-- Select -->
+      <div class="container margin-top-100  margin-bottom-100">
+         <div class="col-md-3">
+            <select class="zelect">
+              <option value="first">First Option</option>
+              <option value="second">Another Option</option>
+              <option value="first">First Option</option>
+              <option value="second">Another Option</option>
+              <option value="first">First Option</option>
+              <option value="second">Another Option</option>
+              <option value="first">First Option</option>
+              <option value="second">Another Option</option>
+              <option value="third" selected="selected">Third option</option>
+            </select>
+
+         </div>
+
+      </div>
+      <!-- END :: Select -->
+
+
+      <!-- START :: Date picker -->
+      <div class="container margin-top-100  margin-bottom-100">
+         <div class="col-md-6 form-group">
+				<div class="form-control-wrapper has-date">
+					<input type="text"  class="form-control floating-label date  input-md" placeholder="Date">
+				</div>
+			</div>
+      </div>
+      <!-- END :: Date picker -->
+
+      <!-- START :: Footer -->
+      <footer>
+         <div class="container">
+            <div class="top col-md-12">
+               <img class="logo" src="img/Logo-2.png" alt="Aviron logo">
+
+               <ul class="social">
+                  <li><a href="#">
+                     <i class=" icon-twitter"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-gplus"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-instagram"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-linkedin"></i>
+                  </a></li>
+                  <li><a href="#">
+                     <i class=" icon-facebook"></i>
+                  </a></li>
+
+               </ul>
+
+            </div>
+            <div class="end col-md-12">
+               2017 © Power by Aviron Interactive Inc.
+            </div>
+         </div>
+      </footer>
+      <!-- END :: Footer -->
+
+
+      <!-- START :: modal login -->
+      <div id="login-register"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Aviron Login">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+
+            <div class="panel-heading">
+               <div class="logo-aviron">
+                  <div class="logo-circle">
+                     <img src="img/logo-3.png" alt="logo aviron">
+                  </div>
+               </div>
+               <div class="heading-icon">
+                     <i data-dismiss="modal" aria-label="Close"  class='icon-close'></i>
+               </div>
+            </div>
+
+            <div class="panel-body">
+               <div class="row">
+                  <div class="login-box col-md-6">
+                     <h2 class="text-uppercase">Log in</h2>
+                     <form>
+                        <div class="form-group">
+                          <label for="Email-address">Email address</label>
+                          <input type="email" class="form-control light input-md" id="Email-address" placeholder="Email">
+                        </div>
+                        <div class="form-group margin-top-20">
+                          <label for="Password">Password </label>
+                          <input type="password" class="form-control light input-md" id="Password" placeholder="Password">
+                        </div>
+                        <div class="checkbox">
+                         <label>
+                           <input type="checkbox"> Check me out
+                         </label>
+                       </div>
+                       <button type="submit" class="btn btn-primary btn-md">Login</button>
+
+                       <p class="margin-top-100">
+                          <a href="#">Are you forgot password ?</a>
+                       </p>
+
+                     </form>
+                  </div>
+                  <!-- END :: Login -->
+
+                  <div class="register-box col-md-6">
+                     <h2 class="text-uppercase">Register</h2>
+                  </div>
+                  <!-- END ::Register -->
+               </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- END :: modal login -->
+
+
+      <!-- APP SCRIPTS -->
+      <script src="js/vendor/jquery/jquery-1.9.1.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="less/less.min.js"></script>
+      <script src="js/vendor/table/jquery.dataTables.min.js"></script>
+      <script src="js/vendor/zelect/zelect.js"></script>
+      <script src="js/vendor/bootstrap-material-datetimepicker/js/moment-with-locales.min.js"></script>
+      <script src="js/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+      <script src="js/pc/libs.js"></script>
+      <script src="js/pc/pages.js"></script>
+      <!-- END APP SCRIPTS -->
+   </body>
+</html>
