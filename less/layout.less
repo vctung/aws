@@ -122,7 +122,7 @@
                   ul {
                      &.dropdown-cart {
                         left: 0;
-                        right: auto !important; 
+                        right: auto !important;
                      }
                   }
                }
@@ -223,6 +223,25 @@
 footer {
    text-align: center;
    background: @grey;
+   .container-fluid{
+     border-bottom:  1px solid #cccccc;
+     ul {
+       padding: 30px 0px;
+       margin-bottom: 0px;
+       li {
+         list-style: none;
+         display: inline-block;
+         a {
+           text-transform: uppercase;
+           color: #666;
+           padding: 10px 15px;
+           &:hover {
+             color: @red-1;
+           }
+         }
+       }
+     }
+   }
    .container {
       .top {
          .logo {
