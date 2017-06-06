@@ -10,9 +10,34 @@
       line-height: 230px;
       font-weight: bold;
     }
+    p {
+        color: #fff;
+        margin-top: -90px;
+        font-size: 18px;
+    }
   }
 
   &.contact {
     background-image: url('../img/breadcrumb/contact.png');
+  }
+  &.your-facility {
+    background-image: url('../img/breadcrumb/your-facility.jpg');
+  }
+}
+
+
+@media (max-width: 767px ) {
+  .breadcrumbs {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+      .container {
+        h1 {
+          line-height: inherit;
+        }
+        p {
+          margin-top: 0px;
+        }
+      }
   }
 }
