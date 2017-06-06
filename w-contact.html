@@ -147,7 +147,7 @@
       </section>
       <!-- END :: breadcrumbs -->
 
-
+      <!-- START :: contact-info-box -->
       <section class="contact-info-box">
           <div class="container">
             <div class="row">
@@ -186,12 +186,54 @@
             </div>
           </div>
       </section>
+      <!-- END :: contact-info-box -->
 
-      <div style="height: 800px" class="">
+      <!-- START :: contact-form -->
+      <section class="contact-form">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-md-6 col-lg-7">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.239914775891!2d-79.27997508407114!3d43.726342679118865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ce129235862b%3A0xc25e9aee7345b4ff!2s780+Birchmount+Rd+%2316%2C+Scarborough%2C+ON+M1K+5H4%2C+Canada!5e0!3m2!1sen!2s!4v1496747906967"
+                  width="100%" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <!-- END :: div map -->
 
-      </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="form-contact">
+                        <h3 class="website-small-title">
+                            send us a message
+                        </h3>
+                        <form class="form-horizontal">
+                          <div class="form-group">
+                            <input type="email" class="form-control input-md "  placeholder="Email address (*)">
+                          </div>
+
+                          <div class="form-group">
+                            <input type="text" class="form-control input-md "  placeholder="Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control input-md "  placeholder="Phone">
+                          </div>
+
+                          <div class="form-group">
+                            <input type="text" class="form-control input-md "  placeholder="Company">
+                          </div>
+                          <div class="form-group">
+                              <textarea class="form-control" rows="20"></textarea>
+                          </div>
+                          <button class="btn btn-lg btn-primary" type="button" name="button">
+                            send
+                          </button>
+                        </form>
 
 
+                    </div>
+                </div>
+                <!-- END :: div form -->
+            </div>
+        </div>
+      </section>
+      <!-- END :: contact-form -->
 
       <!-- START :: Footer -->
       <footer>
@@ -336,37 +378,24 @@
       <script src="js/vendor/table/jquery.dataTables.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
 
-      <script src="js/vendor/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
-      <script src="js/vendor/zelect/zelect.js"></script>
-      <script src="js/vendor/bootstrap-material-datetimepicker/js/moment-with-locales.min.js"></script>
-      <script src="js/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
-      <script src="js/vendor/OwlCarousel/owlcarousel/owl.carousel.js"></script>
-      <script>
-       var owl = $('.owl-carousel');
-       owl.owlCarousel({
-         margin: 20,
-         loop: true,
-         center : true,
-         responsive: {
-           0: {
-             items: 1
-           },
-           600: {
-             items: 2
-           },
-           1000: {
-             items: 4
-           }
-         }
-       })
-     </script>
 
 
       <script src="less/less.min.js"></script>
       <script src="js/pc/libs.js"></script>
-      <script src="js/pc/pages.js"></script>
+
       <!-- END APP SCRIPTS -->
+
+      <script type="text/javascript">
+
+          $(document).ready(function(){
+                _bodyWidth = $('body').width();
+                  alert(_bodyWidth);
+                if(_bodyWidth > 1200) {
+                jQuery.scrollSpeed(100, 8000);
+                }
+          });
+      </script>
 
 
 

@@ -11,18 +11,59 @@
           border: 1px solid #ccc;
           min-height: 260px;
           padding: 20px 0px;
+          .transition-all(0.4s);
           i {
             font-size: 60px;
             color: @red-1;
           }
           h2 {
-            font-weight: 100;
+            font-weight: 300;
             text-transform: uppercase;
+            color: #333;
           }
+          &:hover {
+            border: 1px solid @red-1;
+          }
+
         }
+        // END :: & > div {
       }
     }
   }
 }
 // END :: contact-info-box
+// ------------------------------------------
+
+
+// ------------------------------------------
+// START :: contact-form
+.contact-form {
+  background: #fafafa;
+    .container-fluid {
+      .row {
+        & > div {
+          .form-contact {
+            text-align: center;
+            padding-top: 40px;
+            form {
+              max-width: 400px;
+              margin: auto;
+              margin-top: 40px;
+              .form-group {
+                textarea {
+                  height: 220px;
+                }
+
+              }
+              & > button {
+                padding-left: 80px;
+                padding-right: 80px;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+// END :: contact-form
 // ------------------------------------------
