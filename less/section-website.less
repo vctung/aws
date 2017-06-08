@@ -301,3 +301,69 @@
 }
 // END :: our-story
 // ------------------------------------------
+
+
+.imageblock {
+    position: relative;
+    padding: 0;
+    padding-top: 4.95238095em;
+    padding-bottom: 4.95238095em;
+}
+
+.switchable div[class*='col-']:first-child:not([class*='pull']):not([class*='push']) {
+    left: 0;
+}
+
+.switchable div[class*='col-']:first-child {
+    float: left;
+    right: auto;
+}
+theme.css:3109
+.switchable > div[class*='col-'] {
+    padding: 0;
+}
+
+.imageblock .imageblock__content {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    padding: 0;
+}
+.background-image-holder:not([class*='col-']) {
+    width: 100%;
+}
+
+.background-image-holder {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    z-index: 0;
+    transition: opacity .3s linear;
+    -webkit-transition: opacity .3s linear;
+    opacity: 1;
+    background: #252525;
+}
+
+.imageblock > .container, .imageblock > div[class*='col-']:not(.imageblock__content) {
+    padding-top: 7.42857143em;
+    padding-bottom: 7.42857143em;
+    float: none;
+    overflow: hidden;
+}
+
+.switchable div[class*='col-']:last-child:not([class*='pull']):not([class*='push']) {
+    right: 0;
+}
+
+.switchable div[class*='col-']:first-child:not([class*='pull']):not([class*='push']) {
+    left: 0;
+}
+
+.switchable div[class*='col-']:last-child {
+    float: right;
+    left: auto;
+}
