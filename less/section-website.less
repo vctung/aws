@@ -422,3 +422,86 @@
 }
 // END :: Pricing table
 // ------------------------------------------
+
+// ------------------------------------------
+// START :: comparison-chart
+.comparison-chart {
+  padding: 80px 0px;
+    .container {
+        h3 {
+          text-align: center;
+          margin-bottom: 36px;
+        }
+        & > p {
+          margin: 48px;
+          font-size: 18px;
+        }
+        table {
+          font-size: 16px;
+          thead {
+            tr {
+              th {
+                &:nth-child(2) {
+                  border-left: 1px solid @bg-not-white;
+                  border-right: 1px solid @bg-not-white;
+                  text-align: center;
+                }
+                &:nth-child(3) {
+                  text-align: center;
+                }
+              }
+            }
+          }
+          // END :: thead
+
+          tbody {
+            tr {
+              td {
+                &:nth-child(1) {
+                  font-weight: bold;
+                }
+                &:nth-child(2) {
+                  background: #FBFBFB;
+                  text-align: center;
+                }
+                &:nth-child(3) {
+                  text-align: center;
+                }
+                i {
+                  color: @red-1;
+                  font-size: 18px;
+                }
+              }
+              &.child {
+                td {
+                  &:first-child {
+                    padding-left: 30px;
+                    font-weight: normal;
+                  }
+                }
+              }
+              &:last-child {
+                border-bottom: 1px solid #ccc;
+              }
+            }
+          }
+          // END :: tbody
+        }
+    }
+}
+// END :: comparison-chart
+// ------------------------------------------
+
+
+// ------------------------------------------
+// START :: feature-grid-box
+.feature-grid-box {
+  padding: 80px 0px;
+  .container {
+    h3 {
+      text-align: center;
+    }
+  }
+}
+// END :: feature-grid-box
+// ------------------------------------------
