@@ -501,6 +501,25 @@
     h3 {
       text-align: center;
     }
+    .row {
+      padding : 20px 0px;
+      & > div {
+        .feature-item {
+          & > .left {
+            display: inline-block;
+            width: 10%;
+            vertical-align: top;
+            i {
+              font-size: 30px;
+            }
+          }
+          &  > .feature-detail {
+            display: inline-block;
+            width: 88%;
+          }
+        }
+      }
+    }
   }
 }
 // END :: feature-grid-box
