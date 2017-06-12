@@ -500,10 +500,11 @@
   .container {
     h3 {
       text-align: center;
+      margin-bottom: 20px;
     }
     .row {
-      padding : 20px 0px;
       & > div {
+        padding: 20px 40px;
         .feature-item {
           & > .left {
             display: inline-block;
@@ -513,13 +514,25 @@
               font-size: 30px;
             }
           }
+          // END :: left
+
           &  > .feature-detail {
             display: inline-block;
             width: 88%;
+            h4 {
+              color: #333 !important;
+              font-weight: bold;
+            }
+            p {
+              font-size : 16px;
+              color: #666;
+            }
           }
+          // END :: feature detail
+
         }
       }
-    }
+    } /* END :: row*/
   }
 }
 // END :: feature-grid-box
