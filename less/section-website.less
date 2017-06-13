@@ -604,9 +604,47 @@
           }
         }
       }
+      .owl-nav {
+        &.disabled {
+          display: none;
+        }
+      }
     }
+    // END :: .testimonial-list
+
+    .testimonial-control {
+      margin-top: -10px;
+      & > div {
+        display: inline-block;
+        &:first-child {
+          width: 20%;
+        }
+        &:nth-child(2) {
+          width: 77%;
+          background: green
+        }
+      }
+    }
+
   }
 
+}
+
+@media (max-width: 767px ) {
+  .testimonial {
+    .container {
+      .testimonial-list {
+        .item {
+          .info {
+            width: 100%;
+          }
+          .text {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 // END :: Testimonial
 // ------------------------------------------
