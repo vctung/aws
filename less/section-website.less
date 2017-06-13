@@ -541,6 +541,72 @@
 
 // ------------------------------------------
 // START :: Testimonial
+.testimonial {
+  padding: 80px 0px;
+  background-image: url("../img/bg/4.jpeg");
+  position: relative;
+  .fix-bg-parralax;
+  .has-bg-mask(0.7);
 
+  .container {
+    position: relative;
+    z-index: 2;
+    .testimonial-list {
+      .item {
+        width: 100%;
+        color: #fff;
+        & > .info {
+          display: inline-block;
+          width: 20%;
+          text-align: center;
+          h4 {
+            color: @red-1;
+            text-transform: uppercase;
+          }
+          p {
+            line-height: 0px;
+          }
+        }
+        & > .text {
+          display: inline-block;
+          width: 77%;
+          vertical-align: top;
+          font-size: 16px;
+          padding: 40px 100px;
+          position: relative;
+          &::after {
+            content: "\e8a7";
+            position: absolute;
+            top: 0;
+            left: 10px;
+            font-family: "fontello";
+            font-size: 60px;
+            opacity: 0.3;
+          }
+          &::before {
+            content: "\e8a6";
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            font-family: "fontello";
+            font-size: 60px;
+            opacity: 0.3;
+          }
+        }
+      }
+      // END :: item
+
+      .owl-stage-outer {
+        overflow: hidden;
+        .owl-stage {
+          .owl-item {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+}
 // END :: Testimonial
 // ------------------------------------------
