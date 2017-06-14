@@ -328,6 +328,17 @@
     background-repeat: repeat;
     background-size: cover;
   }
+  &.has-little-bit-text {
+    .content-box {
+      padding: 100px 50px;
+    }
+  }
+
+  &.img-right {
+    .image-box {
+      right: 0px;
+    }
+  }
 }
 
 @media (max-width: 991px ) {
@@ -505,32 +516,6 @@
     .row {
       & > div {
         padding: 20px 40px;
-        .feature-item {
-          & > .left {
-            display: inline-block;
-            width: 10%;
-            vertical-align: top;
-            i {
-              font-size: 30px;
-            }
-          }
-          // END :: left
-
-          &  > .feature-detail {
-            display: inline-block;
-            width: 88%;
-            h4 {
-              color: #333 !important;
-              font-weight: bold;
-            }
-            p {
-              font-size : 16px;
-              color: #666;
-            }
-          }
-          // END :: feature detail
-
-        }
       }
     } /* END :: row*/
   }
@@ -538,6 +523,63 @@
 // END :: feature-grid-box
 // ------------------------------------------
 
+// ------------------------------------------
+// START :: feature item
+.feature-item {
+  & > .left {
+    display: inline-block;
+    width: 10%;
+    vertical-align: top;
+    i {
+      font-size: 30px;
+    }
+  }
+  // END :: left
+
+  &  > .feature-detail {
+    display: inline-block;
+    width: 88%;
+    h4 {
+      color: #333 !important;
+      font-weight: bold;
+    }
+    p {
+      font-size : 16px;
+      color: #666;
+    }
+  }
+  // END :: feature detail
+}
+// END :: feature item
+// ------------------------------------------
+
+// ------------------------------------------
+// START :: text-box-only-sub
+.text-box-only-sub  {
+  text-align: right;
+  font-weight: 900;
+  padding: 100px 20px 100px 0px;
+  h4 {
+    color: @red-1;
+    font-size: 20px;
+  }
+  h2 {
+    color: #fff;
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 991px ) {
+  .text-box-only-sub  {
+    text-align: center;
+    padding: 20px;
+    h2 {
+      color: #333;
+    }
+  }
+}
+// START :: text-box-only-sub
+// ------------------------------------------
 
 // ------------------------------------------
 // START :: Testimonial
@@ -659,4 +701,92 @@
   }
 }
 // END :: Testimonial
+// ------------------------------------------
+
+// ------------------------------------------
+// START :: big heading
+.big-heading {
+  padding: 80px 0px;
+  .container {
+    text-align: center;
+      h2 {
+        font-weight: 300;
+      }
+      p {
+        padding: 0px 100px;
+        font-size: 18px;
+        color: #666;
+      }
+  }
+}
+
+@media (max-width: 767px ) {
+  .big-heading {
+    .container {
+        p {
+          padding: 0px 30px;
+        }
+    }
+  }
+}
+// START :: big heading
+// ------------------------------------------
+
+// ------------------------------------------
+// START :: products-slideshow
+.products-slideshow {
+  padding: 80px 0px 40px 0px;;
+  .container {
+    .product-image-list {
+    position: relative;
+    z-index: 2;
+      .item {
+        text-align: center;
+       }
+      .owl-stage-outer {
+        overflow: hidden;
+        .owl-item {
+          display: inline-block;
+        }
+      }
+      .owl-nav {
+        text-align: center;
+        position: absolute;
+        bottom: -56px;
+        width: 100%;
+         & > div {
+           display: inline-block;
+
+           padding: 0px 30px;
+           font-size: 24px;
+         }
+      }
+    }
+    .page-number {
+      text-align: center;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+       & > div {
+         width: 100%;
+         position: absolute;
+         bottom: -50px;
+         span {
+           background: #EFEFEF;
+           color: #666;
+           padding-left:20px;
+         }
+         strong {
+           background: #EFEFEF;
+           padding-right: 20px;
+         }
+       }
+    }
+  }
+
+  &.bottom-dashed {
+    border-bottom: 1px dashed #ccc;
+  }
+}
+// END :: products-slideshow
 // ------------------------------------------
