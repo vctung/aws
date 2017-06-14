@@ -234,7 +234,7 @@
       </section>
       <!-- END :: content haft image -->
 
-      <!-- END :: Testimonial -->
+      <!-- START :: Testimonial -->
       <section class="testimonial">
           <div class="container">
 
@@ -283,6 +283,55 @@
           </div>
       </section>
       <!-- END :: Testimonial -->
+
+      <!-- START :: challengers slideshow -->
+      <section class="challengers-slideshow bg-not-white">
+        <div class="container-fluid">
+          <h3 class="website-small-title">challenges</h3>
+
+          <div class="challengers-slideshow-content">
+              <div class="item">
+                  <img src="img/ingame/1.png" alt="Name of games">
+                  <div class="games-info">
+                      <h4>LIGHTNING LAP</h4>
+                      <p>Challenge yourself to the fastest lap time</p>
+                  </div>
+              </div>
+
+              <div class="item">
+                  <img src="img/ingame/1.png" alt="Name of games">
+                  <div class="games-info">
+                      <h4>LIGHTNING LAP</h4>
+                      <p>Challenge yourself to the fastest lap time</p>
+                  </div>
+              </div>
+
+              <div class="item">
+                  <img src="img/ingame/1.png" alt="Name of games">
+                  <div class="games-info">
+                      <h4>LIGHTNING LAP</h4>
+                      <p>Challenge yourself to the fastest lap time</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="img/ingame/1.png" alt="Name of games">
+                  <div class="games-info">
+                      <h4>LIGHTNING LAP</h4>
+                      <p>Challenge yourself to the fastest lap time</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="img/ingame/1.png" alt="Name of games">
+                  <div class="games-info">
+                      <h4>LIGHTNING LAP</h4>
+                      <p>Challenge yourself to the fastest lap time</p>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- END :: challengers slideshow -->
 
       <!-- START :: feature box -->
       <section class="feature-grid-box">
@@ -447,8 +496,6 @@
       </section>
       <!-- END :: feature box -->
 
-
-
       <!-- START :: keep up to date -->
       <section class="keep-up-to-date">
         <div class="container">
@@ -461,7 +508,6 @@
         </div>
       </section>
       <!-- END :: keep up to date -->
-
 
       <!-- START :: Footer -->
       <footer>
@@ -610,6 +656,8 @@
       <script>
        var owl = $('.testimonial-list');
        var owl2 = $('.product-image-list');
+       var owl3 = $('.challengers-slideshow-content');
+
 
        owl.owlCarousel({
            margin: 0,
@@ -653,11 +701,31 @@
            })
 
        owl2.on('changed.owl.carousel', function(event) {
-        //  var currentItem = event.item.count;
-        //   console.log( event.page.index);
-        $('.ps-current').text(event.page.index+1);
-        $('.ps-page').text("/"+event.item.count);
+            $('.ps-current').text(event.page.index+1);
+            $('.ps-page').text("/"+event.item.count);
        })
+
+
+       owl3.owlCarousel({
+           margin: 0,
+           loop: false,
+           center : true,
+           autoplay : false,
+           navigation : true, // Show next and prev buttons
+           navClass: ['icon-a-left', 'icon-a-right'],
+           navText: false,
+           responsive: {
+             0: {
+               items: 1
+             },
+             600: {
+               items: 1
+             },
+             1000: {
+               items: 7
+             }
+           }
+         })
 
      </script>
 

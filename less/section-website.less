@@ -756,9 +756,12 @@
         width: 100%;
          & > div {
            display: inline-block;
-
+           cursor: pointer;
            padding: 0px 30px;
            font-size: 24px;
+           &:hover {
+             opacity: 0.6;
+           }
          }
       }
     }
@@ -790,3 +793,55 @@
 }
 // END :: products-slideshow
 // ------------------------------------------
+
+
+// START :: challengers slideshow
+.challengers-slideshow {
+  padding: 80px 0px;
+  .container-fluid {
+    background-image: url('../img/circle-rectangle.png');
+    background-position: center center;
+    background-repeat:  no-repeat;
+    min-height: 1000px;
+    h3 {
+      text-align: center;
+    }
+    .challengers-slideshow-content {
+        .owl-stage-outer  {
+          .owl-stage {
+            .owl-item {
+              display: inline-block;
+              // width: 80px !important;
+              .item {
+                // width: 80px;
+                img {
+                  // width: 80px;
+                }
+                .games-info {
+                  display: none;
+                }
+              } /* END :: .item */
+
+              &:not(.cloned) {
+                &.active.center {
+                    // width: 400px !important;
+                  .item {
+                    // width: 400px;
+                    img {
+                      // width: 400px;
+                    }
+                    .games-info {
+                      display: block;
+                    }
+                  } /* END :: .item ACTIVE */
+                }
+              }
+            } /* END :: owl-item {*/
+
+          }
+        }
+    } /* END :: challengers-slideshow-content {*/
+
+  }
+}
+// END :: challengers slideshow
