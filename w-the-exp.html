@@ -155,7 +155,7 @@
             </div>
             <div class="page-number">
                 <div class="">
-                    <span>1</span><strong>/4</strong>
+                    <span class="ps-current">1</span><strong class='ps-page'>/1</strong>
                 </div>
             </div>
         </div>
@@ -652,10 +652,12 @@
              }
            })
 
-      //  owl.on('changed.owl.carousel', function(event) {
-      //    var currentItem = event.item.count;
-      //     console.log( event.page.index);
-      //  })
+       owl2.on('changed.owl.carousel', function(event) {
+        //  var currentItem = event.item.count;
+        //   console.log( event.page.index);
+        $('.ps-current').text(event.page.index+1);
+        $('.ps-page').text("/"+event.item.count);
+       })
 
      </script>
 
