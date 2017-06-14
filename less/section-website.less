@@ -609,22 +609,27 @@
           display: none;
         }
       }
-    }
-    // END :: .testimonial-list
-
-    .testimonial-control {
-      margin-top: -10px;
-      & > div {
-        display: inline-block;
-        &:first-child {
-          width: 20%;
-        }
-        &:nth-child(2) {
-          width: 77%;
-          background: green
+      .owl-dots {
+        text-align: center;
+        margin-left: 15%;
+        margin-top: -50px;
+        .owl-dot {
+          cursor: pointer;
+          display: inline-block;
+          width: 60px;
+          height: 6px;
+          background: rgba(255,255,255,0.2);
+          border-radius: 15px;
+          margin-left: 6px;
+          margin-right: 6px;
+          &.active {
+            background: rgba(255,255,255,1);
+          }
         }
       }
     }
+    // END :: .testimonial-list
+
 
   }
 
@@ -641,6 +646,10 @@
           .text {
             width: 100%;
           }
+        }
+        .owl-dots {
+          margin-left: 0px;
+          margin-top: 0px;
         }
       }
     }
