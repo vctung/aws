@@ -1022,17 +1022,6 @@
           color: @red-1;
           font-weight: 900;
         }
-        .mouse {
-          position: absolute;
-          bottom: 0;
-          img {
-            height: 50px;
-          }
-          p {
-            color: #fff;
-            text-transform: uppercase;
-          }
-        }
       }/* END :: content */
        .fullscreen-bg__video {
           position: absolute;
@@ -1052,6 +1041,22 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.6);
         z-index: 1;
+      }
+      .mouse {
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        z-index: 4;
+        img {
+          height: 50px;
+        }
+        p {
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 12px;
+        }
       }
     } /* END :: .fullscreen-bg  */
   }
