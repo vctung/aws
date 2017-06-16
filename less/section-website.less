@@ -992,3 +992,58 @@
 }
 // END :: Home product category
 // ------------------------------------------
+
+
+// ------------------------------------------
+// START :: Home video big box
+.home-video-big-box {
+  margin-top: -70px;
+  .container-fluid {
+    padding: 0px;
+    .fullscreen-bg {
+      position: relative;
+      padding: 80px;
+      min-height: 100vh;
+      z-index: 0;
+      overflow: hidden;
+      background-image: url('../img/bg/8.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      .content {
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        & > img {
+          margin-top: 10%;
+        }
+        & > h1 {
+          font-size: 70px;
+          color: @red-1;
+          font-weight: 900;
+        }
+      }
+       .fullscreen-bg__video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center top;
+      } /* for video tag */
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+      }
+    } /* END :: .fullscreen-bg  */
+  }
+}
+// END :: Home video big box
+// ------------------------------------------
