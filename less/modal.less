@@ -10,6 +10,11 @@
                color: @red-1;
                text-transform: uppercase;
             }
+            h4 {
+               font-weight: 900;
+               color: @red-1;
+               text-transform: uppercase;
+            }
          }
          .modal-body {
             padding: 30px;
@@ -236,4 +241,39 @@ a[data-target="#login-register"] {
    }
 }
 // END :: Function custom Login
+// ------------------------------------------
+
+// ------------------------------------------
+// START :: Youtube dialog
+#youtubeVideo {
+  background: rgba(0,0,0,0.5);
+  .modal-dialog {
+    .modal-content {
+      background-color: transparent;
+      box-shadow: none;
+      .modal-header {
+        box-shadow: none;
+        padding-right: 0px;
+        border: none;
+        & > button.close {
+          color: #fff;
+          opacity: 1;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+// END :: Youtube dialog
+// ------------------------------------------
+
+// ------------------------------------------
+// START :: big-image-parallax
+.big-image-parallax {
+  height: 100vh;
+  .fix-bg-parralax ;
+}
+// END :: big-image-parallax
 // ------------------------------------------
