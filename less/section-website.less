@@ -31,6 +31,21 @@
     }
   }
 }
+
+@media (max-width: 767px ) {
+  .contact-info-box {
+    .container {
+        .row {
+          & > div.col-md-4  {
+            & > div {
+              margin: 14px 0px;
+            }
+          }
+        }
+    }
+
+  }
+}
 // END :: contact-info-box
 // ------------------------------------------
 
@@ -64,6 +79,11 @@
         }
       }
     }
+}
+@media (max-width: 767px ) {
+  .contact-form {
+    padding-bottom: 80px;
+  }
 }
 // END :: contact-form
 // ------------------------------------------
@@ -316,6 +336,19 @@
 
   }
 }
+@media (max-width: 767px ) {
+    .our-story {
+      overflow: hidden;
+      .container-fluid {
+        .box-inline {
+          .box {
+
+          }
+        } /* END :: .box-inline */
+
+      }
+    }
+}
 // END :: our-story
 // ------------------------------------------
 
@@ -453,6 +486,22 @@
       }
   }
 }
+
+@media (max-width: 767px ) {
+  .pricing-table {
+      .container {
+        .row {
+          .pricing-item {
+            width: 100%;
+            margin: 0px;
+            &:nth-of-type(1) {
+              margin-bottom: 30px;
+            }
+          }
+        }
+      } /* END ::   .container  */
+  }
+}
 // END :: Pricing table
 // ------------------------------------------
 
@@ -522,6 +571,17 @@
         }
     }
 }
+
+@media (max-width: 767px ) {
+  .comparison-chart {
+      .container {
+        & > p {
+          margin: 40px 0px;
+          text-align: center;
+        }
+      }
+    }
+}
 // END :: comparison-chart
 // ------------------------------------------
 
@@ -542,6 +602,8 @@
     } /* END :: row*/
   }
 }
+
+
 // END :: feature-grid-box
 // ------------------------------------------
 
@@ -572,6 +634,28 @@
   }
   // END :: feature detail
 }
+
+@media (max-width: 767px){
+  .feature-item {
+    & > .left {
+      width: 100%;
+      text-align: center;
+      i {
+        font-size: 40px;
+      }
+    }
+    // END :: left
+
+    &  > .feature-detail {
+      width: 100%;
+      text-align: center;
+      h4 {
+        text-align: center;
+      }
+    }
+    // END :: feature detail
+  }
+}
 // END :: feature item
 // ------------------------------------------
 
@@ -599,6 +683,15 @@
       color: #333;
     }
   }
+}
+
+@media (max-width: 767px ) {
+    .text-box-only-sub  {
+      padding: 20px 0px;
+      h2 {
+        font-size: 40px;
+      }
+    }
 }
 // START :: text-box-only-sub
 // ------------------------------------------
@@ -712,6 +805,7 @@
           }
           .text {
             width: 100%;
+            padding: 80px 0px;
           }
         }
         .owl-dots {
@@ -813,6 +907,26 @@
     border-bottom: 1px dashed #ccc;
   }
 }
+
+@media (max-width: 767px ) {
+  .products-slideshow {
+    .container {
+      .product-image-list {
+        .owl-stage-outer {
+          .owl-stage {
+            .owl-item {
+              .item {
+                & > img {
+                    width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 // END :: products-slideshow
 // ------------------------------------------
 
@@ -821,14 +935,13 @@
 .challengers-slideshow {
   padding: 80px 0px;
   .container-fluid {
-    background-image: url('../img/circle-rectangle.png');
-    background-position: center center;
-    background-repeat:  no-repeat;
-    min-height: 1000px;
     h3 {
       text-align: center;
     }
     .challengers-slideshow-content {
+      background-image: url('../img/circle-rectangle.png');
+      background-position: center center;
+      background-repeat:  no-repeat;
         .owl-stage-outer  {
           .owl-stage {
             .owl-item {
@@ -996,9 +1109,9 @@
     .container-fluid {
       .row {
         & > div {
-          padding: 80px;
+          // padding: 80px;
           & > .item-detail {
-
+            padding-bottom: 100%;
           }
         }
       }
@@ -1006,6 +1119,7 @@
     }
   }
 }
+
 // END :: Home product category
 // ------------------------------------------
 
@@ -1075,6 +1189,26 @@
         }
       }
     } /* END :: .fullscreen-bg  */
+  }
+}
+@media (max-width: @screen-xs-max) {
+  .home-video-big-box {
+    .container-fluid {
+      .fullscreen-bg {
+        padding: 70px  0px 0px 0px;
+        .content {
+          & >img {
+            width: 150px;
+          }
+          & > h1 {
+            font-size: 40px;
+          }
+          & > button[data-target="#youtubeVideo"] {
+              margin-top: 30px;
+          }
+        }
+      } /* END :: .fullscreen-bg  */
+    }
   }
 }
 // END :: Home video big box
@@ -1233,7 +1367,12 @@
               }
             }
           }
-        }
+          &:last-child {
+            padding-top: 40px;
+            margin-top: 40px;
+            border-top : 1px solid #eee;
+          }
+        } /* END div.col-md-6  */
       }
     }
   }
@@ -1253,7 +1392,7 @@
     }
     button {
       padding-left: 40px;
-      padding-right : 40px; 
+      padding-right : 40px;
     }
   }
 }

@@ -1,3 +1,14 @@
+@media (max-width: @screen-xs-max) {
+  body {
+    // overflow-x: hidden;
+  }
+
+}
+
+
+
+// ------------------------------------------
+// START :: navbar
 .navbar {
    &.navbar-inverse {
       border-radius: 0px;
@@ -76,7 +87,7 @@
 // START :: Nav bar mobile
 @media (max-width: @screen-xs-max) {
    .navbar {
-      z-index: 1;
+      z-index: 3 !important; /*fix bug overlap by slider product and sub*/
       .container-fluid{
          #aviron-menu {
             border-color : #ccc !important;
@@ -146,11 +157,26 @@
             }
          }
       }
-   }
+
+      &.transparent {
+          .container-fluid{
+               #aviron-menu {
+                 background: #fff;
+                 ul.nav {
+                   li {
+                     a {
+                       color: #333;
+                     }
+                   }
+                 }
+               }
+          }
+      }
+   } /* END ::  .navbar */
 
 
 }
-// END :: Change breakpoint nav bar
+// END :: Change breakpoint nav bar at 1200px
 // ------------------------------------------
 
 // ------------------------------------------
@@ -280,6 +306,14 @@ footer {
 // START :: Footer mobile
 @media (max-width: @screen-xs-max) {
    footer {
+     .container-fluid{
+       ul.button-nav {
+         li {
+           display: block;
+           padding: 14px 0px;
+         }
+       }
+     }
       .top {
          img {
             height: 75px;
