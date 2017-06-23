@@ -933,48 +933,33 @@
 // ------------------------------------------
 // START :: challengers slideshow
 .challengers-slideshow {
-  padding: 80px 0px;
   .container-fluid {
+    padding: 0px;
     h3 {
       text-align: center;
     }
     .challengers-slideshow-content {
-      background-image: url('../img/circle-rectangle.png');
-      background-position: center center;
-      background-repeat:  no-repeat;
-        .owl-stage-outer  {
-          .owl-stage {
-            .owl-item {
-              display: inline-block;
-              // width: 80px !important;
-              .item {
-                // width: 80px;
-                img {
-                  // width: 80px;
-                }
-                .games-info {
-                  display: none;
-                }
-              } /* END :: .item */
+      position: relative;
+      width: 100%;
 
-              &:not(.cloned) {
-                &.active.center {
-                    // width: 400px !important;
-                  .item {
-                    // width: 400px;
-                    img {
-                      // width: 400px;
-                    }
-                    .games-info {
-                      display: block;
-                    }
-                  } /* END :: .item ACTIVE */
+      .container {
+        height: 100vh;
+        #slider {
+
+          .sl-slider {
+            height: 100vh !important;
+            width: 100vw !important;
+            .sl-slides-wrapper {
+              .sl-slide  {
+                .sl-content-wrapper {
+                  height: 100vh !important;
+                  width: 100vw !important;
                 }
               }
-            } /* END :: owl-item {*/
-
+            }
           }
         }
+      }
     } /* END :: challengers-slideshow-content {*/
 
   }
