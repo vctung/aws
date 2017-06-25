@@ -957,20 +957,74 @@
                   .sl-content {
                     .sl-slide-inner {
                       .deco {
+                        width: 360px;
+                        height: 360px;
+                        margin: 0 0 0 -180px;
                         img {
                           width: 100%;
                         }
                       }
-                    }
+                      blockquote {
+                        p {
+                          font-size: 20px;
+                        }
+                        cite {
+                          font-size: 16px;
+                        }
+                      }
+                    } /* END :: .sl-slide-inner */
                   }
                 } /* END :: .sl-content-wrapper */
-              }
+                &.bg-3 {
+                  .sl-slide-inner {
+                      background: #a21d2e;
+                  }
+                }
+                &.bg-4 {
+                  .sl-slide-inner {
+                      background: #000;
+                  }
+                }
+                &.bg-5 {
+                  .sl-slide-inner {
+                      background: #fff;
+                  }
+                }
+              }/*END :: sl-slide*/
             }
           } /*END :: .sl-slider  */
         }
       }
     } /* END :: challengers-slideshow-content {*/
 
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .challengers-slideshow {
+    .container-fluid {
+      .challengers-slideshow-content {
+        .container {
+          .sl-slider {
+            .sl-slides-wrapper {
+              .sl-slide  {
+                .sl-content-wrapper {
+                  .sl-content {
+                    .sl-slide-inner {
+                      .deco {
+                        width: 160px !important;
+                        height: 160px !important;
+                        margin: 0 0 50px -80px !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+         }
+      }
+    }
   }
 }
 // END :: challengers slideshow
