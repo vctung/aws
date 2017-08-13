@@ -1,5 +1,5 @@
 
-var form = new LoginForm();
+
 
 
 $('.register-box , .login-box').mouseenter(function(event) {
@@ -8,7 +8,6 @@ $('.register-box , .login-box').mouseenter(function(event) {
    selecter = selecter.substr(0,selecter.indexOf(' ')) ;
    form.active(selecter);
 });
-
 
 $("button[switch-view-login-register]").click(function(event) {
    var __selecter = $(this).attr('switch-view-login-register');
